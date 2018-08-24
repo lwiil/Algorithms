@@ -8,14 +8,13 @@
 
 import random
 
-'''
+
 first, last = [int(i) for i in input('Введите границы диапазона целых значений через пробел: ').split()]
 print('Случайное целое число:', format(random.randint(first, last)))
 
-
 first, last = [float(i) for i in input('Введите границы диапазона вещественных значений через пробел: ').split()]
 print('Случайное вещественное число:', format(random.uniform(first, last)))
-'''
+
 letters = list('abcdefghijklmnopqrstuvwxyz')
 first, last = [str(i).lower() for i in input('Введите границы диапазона символьных значений через пробел: ').split()]
 print('Случайный символ:', format(random.choice(letters[letters.index(first):letters.index(last)+1])))
