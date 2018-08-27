@@ -1,0 +1,6 @@
+# 6. Пользователь вводит номер буквы в алфавите. Определить, какая это буква.
+
+letters = list('abcdefghijklmnopqrstuvwxyz')
+num = int(input('Введите номер буквы: '))
+
+print('Под номером {} находится буква {}'.format(num, letters[num -1]))

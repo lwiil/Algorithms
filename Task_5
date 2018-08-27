@@ -1,0 +1,8 @@
+# 5. Пользователь вводит две буквы. Определить, на каких местах алфавита они стоят и сколько между ними находится букв.
+
+letters = list('abcdefghijklmnopqrstuvwxyz')
+first, second = [str(i).lower() for i in input('Введите две буквы английского алфавита через пробел: ').split()]
+
+print('Буква {} находится на {} месте.'.format(first, letters.index(first)+1))
+print('Буква {} находится на {} месте.'.format(second, letters.index(second)+1))
+print('Между {} и {} {} букв(ы).'.format(first, second, int(letters.index(second)+1)-int(letters.index(first)+1)))
