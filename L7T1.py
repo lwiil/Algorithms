@@ -5,7 +5,6 @@ import random
 
 size = 20
 arr = [random.randint(-100, 100) for _ in range(size)]
-sorted_arr = []
 print(arr)
 
 counter = len(arr)
